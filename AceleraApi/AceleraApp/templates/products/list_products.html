@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acelera Produtos</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Descrição</th>
+            <th>Categoria</th>
+            <th>Imagem</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in products %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.price}}</td>
+            <td>{{i.description}}</td>
+            <td>{{i.category}}</td>
+            <td>{{i.image}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+</body>
+</html>
